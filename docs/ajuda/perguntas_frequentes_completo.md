@@ -617,7 +617,132 @@ Caso os problemas persistam, podes sempre enviar os documentos via e-mail para o
 
 **Pergunta**: Como posso validar um cartão de crédito/débito/pré-pago que utilizei para realizar depósitos?
 
-**Resposta**: 
+**Resposta**:
 Para validares um cartão que utilizaste para depositar na Solverde.pt, basta enviares uma fotografia ou scan a cores da frente e verso do cartão através da tua conta de jogador.
 
-Envia-o em "A Minha Conta" > "Envio de Documentos" ou diretamente para o
+Envia-o em "A Minha Conta" > "Envio de Documentos" ou diretamente para o endereço documentos.cos@solverde.pt.
+
+**Palavras-chave**: validar cartão, verificação cartão, documentos
+
+---
+
+## Métodos de Pagamento
+
+### Que métodos de pagamento estão disponíveis na Solverde.pt?
+**Categoria**: Pagamentos | Depósitos e Levantamentos
+**Fonte**: Documentação interna
+
+**Pergunta**: Que métodos de pagamento tem disponíveis? Quais são as formas de depositar e levantar?
+
+**Resposta**:
+Na Solverde.pt, dispomos dos seguintes métodos de pagamento:
+
+**Para Depósitos:**
+- Transferência Bancária (SEPA)
+- Cartão de Crédito/Débito (Visa, Mastercard)
+- MB Way
+- Multibanco
+- PayPal
+- Neteller
+- Skrill
+
+**Para Levantamentos:**
+- Transferência Bancária (SEPA)
+- Cartão de Crédito/Débito (Visa, Mastercard)
+- PayPal
+- Neteller
+- Skrill
+
+**IMPORTANTE**: Os pedidos de levantamento devem ser feitos sempre através do mesmo método usado para depositar, sempre que este o permita.
+
+**Métodos NÃO disponíveis**: A Solverde.pt NÃO aceita Pix, Bitcoin, criptomoedas, ou outros métodos de pagamento não listados acima.
+
+Se precisas de usar um método específico que não está listado, contacta o nosso apoio ao cliente para confirmar disponibilidade.
+
+**Palavras-chave**: métodos pagamento, depositar, levantar, visa, mastercard, mbway, multibanco, paypal, neteller, skrill, pix, bitcoin
+
+---
+
+### A Solverde.pt aceita Pix?
+**Categoria**: Pagamentos | Métodos
+**Fonte**: Documentação interna
+
+**Pergunta**: Posso usar Pix para depositar ou levantar? Têm Pix disponível?
+
+**Resposta**:
+Não, a Solverde.pt NÃO aceita Pix como método de pagamento.
+
+Os métodos disponíveis são:
+- Transferência Bancária (SEPA)
+- Cartão de Crédito/Débito (Visa, Mastercard)
+- MB Way
+- Multibanco
+- PayPal
+- Neteller
+- Skrill
+
+Se precisas de usar outro método de pagamento, contacta o nosso apoio ao cliente através do email suporte@solverde.pt.
+
+**Palavras-chave**: pix, brasil, método pagamento, não disponível
+
+---
+
+### A Solverde.pt aceita criptomoedas ou Bitcoin?
+**Categoria**: Pagamentos | Métodos
+**Fonte**: Documentação interna
+
+**Pergunta**: Posso depositar com Bitcoin ou outras criptomoedas?
+
+**Resposta**:
+Não, a Solverde.pt NÃO aceita Bitcoin, Ethereum, ou qualquer outra criptomoeda como método de pagamento.
+
+Os métodos disponíveis são:
+- Transferência Bancária (SEPA)
+- Cartão de Crédito/Débito (Visa, Mastercard)
+- MB Way
+- Multibanco
+- PayPal
+- Neteller
+- Skrill
+
+Para usar um dos métodos disponíveis, acede a "Caixa" > "Depósito" na tua conta.
+
+**Palavras-chave**: bitcoin, criptomoedas, crypto, ethereum, não disponível
+
+---
+
+### Qual é o valor mínimo de depósito?
+**Categoria**: Pagamentos | Depósitos
+**Fonte**: Documentação interna
+
+**Pergunta**: Qual é o depósito mínimo? Quanto tenho de depositar no mínimo?
+
+**Resposta**:
+O valor mínimo de depósito na Solverde.pt é de **10€**.
+
+Este valor aplica-se à maioria dos métodos de pagamento disponíveis (Multibanco, MB Way, cartão, transferência bancária, PayPal, Neteller, Skrill).
+
+Não existe um valor máximo de depósito por transação, mas podes ter limites definidos pelo teu banco ou método de pagamento.
+
+**Palavras-chave**: depósito mínimo, 10 euros, valor mínimo
+
+---
+
+### Qual é o valor mínimo de levantamento?
+**Categoria**: Pagamentos | Levantamentos
+**Fonte**: Documentação interna
+
+**Pergunta**: Qual é o levantamento mínimo? Quanto posso levantar no mínimo?
+
+**Resposta**:
+O valor mínimo de levantamento na Solverde.pt é de **20€**.
+
+**Prazos de levantamento:**
+- Levantamentos a partir de 20€: creditados de forma imediata (Levantamentos Flash)
+- Levantamentos inferiores a 20€: podem demorar até 2 dias úteis
+
+O valor máximo de levantamentos diários processados pela Solverde.pt é de 100.000€.
+
+**Palavras-chave**: levantamento mínimo, 20 euros, valor mínimo, limite
+
+---
