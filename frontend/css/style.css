@@ -1,0 +1,241 @@
+/* Custom styles for Solverde chatbot */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Message bubbles */
+.message {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* User message */
+.user-message {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 1.25rem;
+    border-radius: 1.5rem 1.5rem 0.25rem 1.5rem;
+    max-width: 70%;
+    margin-left: auto;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+/* Assistant message */
+.assistant-message {
+    background: #f3f4f6;
+    color: #1f2937;
+    padding: 1rem 1.25rem;
+    border-radius: 1.5rem 1.5rem 1.5rem 0.25rem;
+    max-width: 70%;
+    margin-right: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Typing animation */
+.typing-dots {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.typing-dots span {
+    width: 8px;
+    height: 8px;
+    background-color: #10b981;
+    border-radius: 50%;
+    display: inline-block;
+    animation: typing 1.4s infinite;
+}
+
+.typing-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    0%, 60%, 100% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    30% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+/* Markdown styling in messages */
+.assistant-message p {
+    margin-bottom: 0.5rem;
+}
+
+.assistant-message p:last-child {
+    margin-bottom: 0;
+}
+
+.assistant-message ul, .assistant-message ol {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.assistant-message li {
+    margin-bottom: 0.25rem;
+}
+
+.assistant-message strong {
+    font-weight: 600;
+    color: #059669;
+}
+
+.assistant-message code {
+    background: #e5e7eb;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-family: 'Courier New', monospace;
+}
+
+.assistant-message pre {
+    background: #1f2937;
+    color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.assistant-message pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+.assistant-message a {
+    color: #059669;
+    text-decoration: underline;
+}
+
+.assistant-message a:hover {
+    color: #047857;
+}
+
+/* Scrollbar styling */
+#chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+    background: #10b981;
+    border-radius: 4px;
+}
+
+#chat-container::-webkit-scrollbar-thumb:hover {
+    background: #059669;
+}
+
+/* Welcome screen animation */
+.welcome-screen {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Suggestion buttons */
+.suggestion-btn {
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.suggestion-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Error message */
+.error-message {
+    background: #fee2e2;
+    border: 1px solid #fca5a5;
+    color: #991b1b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+/* Success message */
+.success-message {
+    background: #d1fae5;
+    border: 1px solid #6ee7b7;
+    color: #065f46;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+/* Loading state for send button */
+.send-btn-loading {
+    position: relative;
+}
+
+.send-btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .user-message,
+    .assistant-message {
+        max-width: 85%;
+    }
+
+    .welcome-screen h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-screen .grid {
+        grid-template-columns: 1fr;
+    }
+}

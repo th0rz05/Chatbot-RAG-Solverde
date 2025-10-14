@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solverde.pt - Assistente Virtual</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <div class="flex flex-col h-screen max-w-6xl mx-auto">
+
+        <!-- Header -->
+        <header class="bg-gradient-to-r from-green-600 to-green-700 text-white shadow-lg">
+            <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-robot text-3xl"></i>
+                    <div>
+                        <h1 class="text-2xl font-bold">Assistente Virtual</h1>
+                        <p class="text-sm text-green-100">Solverde.pt</p>
+                    </div>
+                </div>
+                <button id="new-chat-btn" class="bg-white text-green-600 px-4 py-2 rounded-lg font-semibold hover:bg-green-50 transition flex items-center space-x-2">
+                    <i class="fas fa-plus"></i>
+                    <span>Nova Conversa</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Chat Container -->
+        <div id="chat-container" class="flex-1 overflow-y-auto p-6 space-y-4 bg-white">
+            <!-- Welcome message -->
+            <div class="text-center py-12 welcome-screen">
+                <i class="fas fa-comments text-6xl text-green-500 mb-4"></i>
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Olá! Como posso ajudar?</h2>
+                <p class="text-gray-600">Pergunta-me qualquer coisa sobre a Solverde.pt</p>
+
+                <!-- Suggested questions -->
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                    <button class="suggestion-btn bg-green-50 hover:bg-green-100 p-4 rounded-lg text-left transition">
+                        <i class="fas fa-clock text-green-600 mr-2"></i>
+                        <span class="text-gray-700">Quanto tempo demora um levantamento?</span>
+                    </button>
+                    <button class="suggestion-btn bg-green-50 hover:bg-green-100 p-4 rounded-lg text-left transition">
+                        <i class="fas fa-gift text-green-600 mr-2"></i>
+                        <span class="text-gray-700">Como usar free spins?</span>
+                    </button>
+                    <button class="suggestion-btn bg-green-50 hover:bg-green-100 p-4 rounded-lg text-left transition">
+                        <i class="fas fa-file-alt text-green-600 mr-2"></i>
+                        <span class="text-gray-700">Como obter comprovativo de IBAN?</span>
+                    </button>
+                    <button class="suggestion-btn bg-green-50 hover:bg-green-100 p-4 rounded-lg text-left transition">
+                        <i class="fas fa-trophy text-green-600 mr-2"></i>
+                        <span class="text-gray-700">Como usar o meu bónus?</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Messages will be inserted here dynamically -->
+        </div>
+
+        <!-- Typing Indicator (hidden by default) -->
+        <div id="typing-indicator" class="hidden px-6 py-2">
+            <div class="flex items-center space-x-2 text-gray-500">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="text-sm">O assistente está a escrever...</span>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="border-t bg-white p-4 shadow-lg">
+            <form id="chat-form" class="max-w-4xl mx-auto">
+                <div class="flex space-x-3">
+                    <input
+                        id="user-input"
+                        type="text"
+                        placeholder="Escreve a tua mensagem aqui..."
+                        class="flex-1 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                        autocomplete="off"
+                    />
+                    <button
+                        type="submit"
+                        id="send-btn"
+                        class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        <span>Enviar</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+            <p class="text-xs text-gray-500 text-center mt-2">
+                Assistente Virtual Solverde.pt | Powered by IA
+            </p>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
