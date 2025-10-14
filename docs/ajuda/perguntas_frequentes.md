@@ -6,7 +6,6 @@ lang: "pt-PT"
 
 ## Quanto tempo demora até receber o montante do meu levantamento?
 Fonte: https://ajuda.solverde.pt/hc/pt/articles/15423036275345-Quanto-tempo-demora-at%C3%A9-receber-o-montante-do-meu-levantamento
-ID: 15423036275345
 
 Q: Quanto tempo demora até receber o montante do meu levantamento?  
 A: Na Solverde.pt, os Levantamentos Flash permitem que os teus ganhos sejam disponibilizados de forma imediata. No entanto, há algumas exceções a considerar.
@@ -45,7 +44,6 @@ Se os prazos indicados foram ultrapassados, e o teu banco não estiver sujeito �
 
 ## Onde posso jogar as free spins que recebi? 
 Fonte: https://ajuda.solverde.pt/hc/pt/articles/15445478041361-Onde-posso-jogar-as-free-spins-que-recebi
-ID: 15445478041361
 
 Q: Onde posso jogar as free spins que recebi?
 A: Recebeste free spins no âmbito de uma promoção ou oferta especial e não sabes onde as jogar? Eis como podes jogar as tuas free spins, passo a passo:
@@ -64,7 +62,6 @@ Lembra-te que podes consultar as free spins disponíveis na tua conta na área d
 
 ## Como obter um comprovativo de IBAN válido? 
 Fonte: https://ajuda.solverde.pt/hc/pt/articles/23259728041745-Como-obter-um-comprovativo-de-IBAN-v%C3%A1lido
-ID: 23259728041745
 
 Q: Como obter um comprovativo de IBAN válido?
 A: Para que o teu pedido de levantamento seja aprovado, é necessário que tenhas a tua conta de pagamento validada.
@@ -122,7 +119,6 @@ Moey:
 
 ## Onde posso jogar o bónus que recebi? 
 Fonte: https://ajuda.solverde.pt/hc/pt/articles/21924831075729-Onde-posso-jogar-o-b%C3%B3nus-que-recebi
-ID: 21924831075729
 
 Q: Onde posso jogar o bónus que recebi?
 A: Recebeste um bónus no casino da Solverde.pt e não sabes onde o usar? Eis como podes utilizar este tipo de oferta, passo a passo:
