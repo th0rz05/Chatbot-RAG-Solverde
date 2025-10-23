@@ -3,7 +3,7 @@
 
 class SolverdeChatbot {
     constructor() {
-        this.apiBaseUrl = 'http://localhost:8000';
+        this.apiBaseUrl = '';
         this.sessionId = this.generateUUID();
         this.isStreaming = false;
 

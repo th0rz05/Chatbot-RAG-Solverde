@@ -5,8 +5,10 @@ Fornece API REST com suporte a Server-Sent Events (SSE) para streaming
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import StreamingResponse, FileResponse # Adiciona FileResponse
+from fastapi.staticfiles import StaticFiles # Adiciona isto
 from pydantic import BaseModel
+
 from typing import Optional
 import json
 import asyncio
@@ -32,12 +34,7 @@ app = FastAPI(
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:8080",
-        "http://localhost:3000",
-        "http://127.0.0.1:8080",
-        "http://127.0.0.1:3000"
-    ],
+    allow_origins=["*"], # ALTERA ISTO para permitir tudo (só para demo!)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -98,15 +95,15 @@ class SessionRequest(BaseModel):
     session_id: str
 
 
-# Endpoints
-@app.get("/")
-async def root():
-    """Health check básico"""
-    return {
-        "message": "Solverde Chatbot API v2.0",
-        "status": "running",
-        "docs": "/docs"
-    }
+# Servir arquivos estáticos (JS, CSS)
+# Os caminhos são relativos à pasta 'backend' (onde api.py está)
+app.mount("/js", StaticFiles(directory="../frontend/js"), name="js")
+app.mount("/css", StaticFiles(directory="../frontend/css"), name="css")
+
+# Servir o index.html na raiz
+@app.get("/", include_in_schema=False)
+async def serve_index():
+    return FileResponse("../frontend/index.html")
 
 
 @app.get("/health")
