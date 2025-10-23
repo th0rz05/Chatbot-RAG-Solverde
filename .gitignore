@@ -6,7 +6,7 @@ __pycache__/
 # C extensions
 *.so
 
-# Distribution / packaging
+# Distibution / packaging
 .Python
 build/
 develop-eggs/
@@ -209,3 +209,5 @@ __marimo__/
 .DS_Store
 
 *.bin
+
+.vscode/

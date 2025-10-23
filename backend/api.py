@@ -12,6 +12,7 @@ import json
 import asyncio
 import os
 import sys
+import glob
 
 # Adicionar diretório pai ao path para importar o chatbot
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -65,16 +66,26 @@ chatbot = SolverdeChatbot(
 )
 
 # Carregar FAQs se database está vazia
-FAQ_FILE = os.getenv("FAQ_FILE", "docs/ajuda/perguntas_frequentes_completo.md")
+FAQ_DIR = os.getenv("FAQ_DIR", "../docs/ajuda/")
 if chatbot.collection.count() == 0:
-    print(f"📁 A carregar FAQs de {FAQ_FILE}...")
-    if os.path.exists(FAQ_FILE):
-        try:
-            chatbot.load_faqs_from_file(FAQ_FILE)
-        except Exception as e:
-            print(f"❌ Erro ao carregar FAQs: {e}")
+    print(f"📁 A carregar FAQs de {FAQ_DIR}...")
+    
+    # Load all .md files in the directory
+    faq_files = glob.glob(os.path.join(FAQ_DIR, "*.md"))
+    
+    if not faq_files:
+        print(f"⚠️  Nenhum ficheiro .md encontrado em {FAQ_DIR}")
     else:
-        print(f"⚠️  Ficheiro não encontrado: {FAQ_FILE}")
+        total_loaded = 0
+        for faq_file in sorted(faq_files):
+            print(f"  📄 A carregar: {os.path.basename(faq_file)}")
+            try:
+                chatbot.load_faqs_from_file(faq_file)
+                total_loaded += 1
+            except Exception as e:
+                print(f"  ❌ Erro ao carregar {faq_file}: {e}")
+        
+        print(f"✅ {total_loaded} ficheiros carregados com sucesso!")
 
 
 # Modelos Pydantic para requests
